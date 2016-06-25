@@ -1,0 +1,198 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+%
+% (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{boldline}
+\usepackage{bold-extra}
+
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\customsubheader}[4]{
+\begin{tabular*}{6.5in}{l@{{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+
+\newcommand{\datedsection}[2]{%
+  \section[#1]{#1 \hfill #2}%
+}
+\newcommand{\datedsubsection}[2]{%
+  \subsection[#1]{#1 \hfill #2}%
+}
+
+
+
+%\renewcommand{\rmdefault}{ptm}
+
+\titleformat{\section}         % Customise the \section command 
+  {\Large\scshape\raggedright\rmfamily} % Make the \section headers large (\Large),
+                               % small capitals (\scshape) and left aligned (\raggedright)
+  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                           % Can be used to insert code before the heading
+  [\titlerule]         
+%----------------------------------------------------------------------------------------------------------------------------
+
+%----------------------------------------------------ACTIVE--------------------------------------------------------------
+
+\newcommand{\resheading}[1]{\vspace{2pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large\scshape #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-8pt}
+}
+
+\newcommand{\customitem}[2]{\item[$\bullet$] {
+ 	\textbf{#1} \hfill \textit{#2}}
+ }
+
+\newcommand{\workitem}[4]{
+\begin{tabular*}{6.5in}{l @{\extracolsep{\fill}} r}
+		\textbf{\textsc{#1}} & \textit{#2} \\
+		\textsc{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-4pt}}
+
+\newcommand{\educationitem}[4]{
+\begin{tabular*}{6.5in}{l @{\extracolsep{\fill}} r}
+		\textbf{\textsc{#1}} & \textit{#2} \\
+		\textsc{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-4pt}}
+
+\newcommand{\workitemfull}[4]{
+	\item[$\bullet$]\workitem{#1}{#2}{#3}{#4}
+}
+
+\newcommand{\educationitemfull}[4]{
+	\item[$\bullet$]\educationitem{#1}{#2}{#3}{#4}
+}
+
+\newcommand{\header}[4]{
+\begin{tabular*}{7in}{l @{\extracolsep{\fill}}r}
+	\LARGE \textbf {#1} & Contact : \textit{#2} \\
+
+		
+		Email : \textit{#4} & LinkedIn : \textit{#3} \\
+		
+		
+	\hlineB{4}	
+\end{tabular*}		
+}
+
+
+%-------------------------------------------------ACTIVE END----------------------------------------------------------
+
+\begin{document}
+
+\header{Gaurav Mishra}{+91-8105622999}{https://in.linkedin.com/in/gaurav-mishra-5822a030}{gauravmishra.itbhu@gmail.com}
+\vspace{10pt}
+
+\resheading{Work Experience}
+
+\begin{enumerate}
+
+	%typito
+	\workitemfull{Typito}{Apr 2015 - July 2016}{Co-Founder/Engineer}{Bangalore,India}
+	\begin{enumerate}
+		\item[-] Developed web frontend using ReactJs and Flux.
+		\item[-] Wrote a module for transforming graphics animation data generated from user's 			actions to series of png images.  
+		\item[-] Wrote typito's video rendering engine using Ffmpeg's library. This module was 				responsible for overlaying graphics animations  on top of a video.
+	\end{enumerate}
+		
+	%tivamo	
+	\workitemfull{Tivamo}{Aug 2014 - July 2016}{Software Engineer}{Bangalore,India}
+	\begin{enumerate}
+		\item[-] Setup video streaming infra capable of delivering live video broadcasts and video on 		demand. Media server used was Wowza Media Server . HLS and RTMP were used as 			delivery protocols.
+		\item[-] To save cost on Wowza Servers, prototyped use of nginx as Edge Servers for video 		delivery.
+		\item[-] For reducing latency , Implemented live video broadcast using WebRTC. Media 			server used was Kurento Media Server
+		\item[-] While working on a project for parent company (Netenrich) developed front end of a 		DIY portal using ReactJs and Redux.
+	\end{enumerate}	
+		
+	%playdom
+	\workitemfull{Playdom (Disney) }{Jun 2011-Mar 2014}{Software Engineer}			{Bangalore,India}
+	\begin{enumerate}
+		\item[-] Worked on end to end feature development of 4 social games for facebook . one of 		which was released for IOS and Android too.
+		\item[-] Wrote a tool to convert swf file to a texture atlas which could be used by framework 			Starling to render UI using GPU.
+	\end{enumerate}	
+	
+	%infosys
+	\workitemfull{Infosys}{June 2010-May 2011}{Junior Research Associate}{Bangalore,India}
+	\begin{enumerate}
+		\item[-] Worked on Semantic Engine that could process a given english text and store it in a 		format which we could query later using natural language.
+		\item[-] Prototyped a application that could process a legal document and guess which parts 		of the document are potential headnotes.A Patent was also filed for the same.
+	\end{enumerate}
+	
+	\workitemfull{IBM}{Apr 2009 - June 2009}{Test Engineer Intern}{Bangalore,India}
+	\begin{enumerate}
+		\item[-] Worked on automation of manual test cases using IBM's Rational Functional Tester.
+		\item[-] Wrote a Module which using character recognition was able to automate certain 			test cases that were not possible using RFT alone.
+	\end{enumerate}
+\end{enumerate}
+
+%minipage to force block of text on same page
+\begin{minipage}{\textwidth}
+
+\resheading{Education}
+
+\begin{enumerate}
+	\educationitemfull{Stony Brook University}{Sept 2016-Present}{MS , Computer Science}{Stony Brook,USA}
+	\educationitemfull{Indian Institute Of Technology,Varanasi}{May 2006-Apr 2010}{Btech , Computer Science}{Varanasi,India}
+\end{enumerate}
+
+\end{minipage}
+
+\resheading{Patents}
+	\begin{enumerate}
+		\item[$\bullet$]Automation of Headnote Extraction from a legal documents.(http://www.google.com/patents/US20130238316)
+	\end{enumerate}
+
+\end{document}
