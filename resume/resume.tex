@@ -1,10 +1,4 @@
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
-% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
-%
-% (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
-%
-%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
 
 \documentclass[letterpaper,11pt]{article}
 \newlength{\outerbordwidth}
@@ -17,11 +11,18 @@
 \usepackage{titlesec}
 \usepackage{boldline}
 \usepackage{bold-extra}
+%\usepackage[default]{lato}
+\usepackage[sfdefault,light]{roboto}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
 
+\usepackage[outline]{contour}% http://ctan.org/pkg/contour
+\contourlength{0.1pt}
+\contournumber{10}%
 
 
 %-----------------------------------------------------------
-%Edit these values as you see fit
+
 
 \setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
 \definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
@@ -45,44 +46,7 @@
 \setlength{\voffset}{0.1in}
 
 
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-
-
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-
-\newcommand{\customsubheader}[4]{
-\begin{tabular*}{6.5in}{l@{{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-
-
-\newcommand{\datedsection}[2]{%
-  \section[#1]{#1 \hfill #2}%
-}
-\newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
-}
-
-
-
-%\renewcommand{\rmdefault}{ptm}
-
-\titleformat{\section}         % Customise the \section command 
-  {\Large\scshape\raggedright\rmfamily} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {}                           % Can be used to insert code before the heading
-  [\titlerule]         
-%----------------------------------------------------------------------------------------------------------------------------
-
-%----------------------------------------------------ACTIVE--------------------------------------------------------------
+%----------------------------------------------------COMMANDS--------------------------------------------------------------
 
 \newcommand{\resheading}[1]{\vspace{2pt}
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
@@ -118,18 +82,22 @@
 
 \newcommand{\header}[4]{
 \begin{tabular*}{7in}{l @{\extracolsep{\fill}}r}
-	\LARGE \textbf {#1} & Contact : \textit{#2} \\
-
+	\LARGE \textbf {\textsc{#1}} & {\hfill} \\
+		Contact : \textit{#2} & {\hfill} \\
 		
-		Email : \textit{#4} & LinkedIn : \textit{#3} \\
+		Email : \textit{#4} & {\hfill} \\
+		LinkedIn : \textit{#3} & {\hfill} \\ 
 		
 		
 	\hlineB{4}	
 \end{tabular*}		
 }
 
+\newcommand{\keyword}[1]{%
+	\contour{black}{\textit{#1}}%
+}
 
-%-------------------------------------------------ACTIVE END----------------------------------------------------------
+%-------------------------------------------------COMMANDS END----------------------------------------------------------
 
 \begin{document}
 
@@ -143,25 +111,25 @@
 	%typito
 	\workitemfull{Typito}{Apr 2015 - July 2016}{Co-Founder/Engineer}{Bangalore,India}
 	\begin{enumerate}
-		\item[-] Developed web frontend using ReactJs and Flux.
+		\item[-] Developed web frontend using \keyword{ReactJs} and \keyword{Flux}.
 		\item[-] Wrote a module for transforming graphics animation data generated from user's 			actions to series of png images.  
-		\item[-] Wrote typito's video rendering engine using Ffmpeg's library. This module was 				responsible for overlaying graphics animations  on top of a video.
+		\item[-] Wrote typito's video rendering engine using \keyword{Ffmpeg}'s library. This module 		was responsible for overlaying graphics animations  on top of a video.
 	\end{enumerate}
 		
 	%tivamo	
 	\workitemfull{Tivamo}{Aug 2014 - July 2016}{Software Engineer}{Bangalore,India}
 	\begin{enumerate}
-		\item[-] Setup video streaming infra capable of delivering live video broadcasts and video on 		demand. Media server used was Wowza Media Server . HLS and RTMP were used as 			delivery protocols.
-		\item[-] To save cost on Wowza Servers, prototyped use of nginx as Edge Servers for video 		delivery.
-		\item[-] For reducing latency , Implemented live video broadcast using WebRTC. Media 			server used was Kurento Media Server
-		\item[-] While working on a project for parent company (Netenrich) developed front end of a 		DIY portal using ReactJs and Redux.
+		\item[-] Setup video streaming infra capable of delivering live video broadcasts and video on 		demand. Media server used was \keyword{Wowza} Media Server.\keyword{HLS} and 				\keyword{RTMP} were used as delivery protocols.
+		\item[-] To save cost on \keyword{Wowza} Servers, prototyped use of \keyword{Nginx} as 			Edge servers for video delivery.
+		\item[-] For reducing latency , Implemented live video broadcast using \keyword{WebRTC}. 			Media server used was \keyword{Kurento} Media Server
+		\item[-] While working on a project for parent company (Netenrich) developed front end of a 		DIY portal using \keyword{ReactJs} and \keyword{Redux}.
 	\end{enumerate}	
 		
 	%playdom
 	\workitemfull{Playdom (Disney) }{Jun 2011-Mar 2014}{Software Engineer}			{Bangalore,India}
 	\begin{enumerate}
 		\item[-] Worked on end to end feature development of 4 social games for facebook . one of 		which was released for IOS and Android too.
-		\item[-] Wrote a tool to convert swf file to a texture atlas which could be used by framework 			Starling to render UI using GPU.
+		\item[-] Wrote a tool to convert swf file to a texture atlas which could be used by framework 			\keyword{Starling} to render UI using GPU.
 	\end{enumerate}	
 	
 	%infosys
@@ -174,7 +142,7 @@
 	\workitemfull{IBM}{Apr 2009 - June 2009}{Test Engineer Intern}{Bangalore,India}
 	\begin{enumerate}
 		\item[-] Worked on automation of manual test cases using IBM's Rational Functional Tester.
-		\item[-] Wrote a Module which using character recognition was able to automate certain 			test cases that were not possible using RFT alone.
+		\item[-] Wrote a Module which using \keyword{character recognition} was able to automate 		certain test cases that were not possible using RFT alone.
 	\end{enumerate}
 \end{enumerate}
 
