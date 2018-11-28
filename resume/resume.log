@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.23)  27 JUN 2016 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  27 NOV 2018 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -281,33 +281,33 @@ File: pdftex.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
 (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Try loading font information for T1+Roboto-LF on input line
- 102.
+ 103.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
 File: T1Roboto-LF.fd 2015/09/15 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' will be
-(Font)              scaled to size 10.95pt on input line 102.
+(Font)              scaled to size 10.0pt on input line 103.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -326,73 +326,55 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' will be
 \c@mv@tabular=\count97
 \c@mv@boldtabular=\count98
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 104.
+(Font)              <7> on input line 105.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 104.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 104.
+(Font)              <5> on input line 105.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' will be
-(Font)              scaled to size 17.28pt on input line 104.
+(Font)              scaled to size 17.28pt on input line 105.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 104.
+(Font)              scaled to size 17.28pt on input line 105.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/sc' will be
-(Font)              scaled to size 17.28pt on input line 104.
+(Font)              scaled to size 17.28pt on input line 105.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/it' will be
-(Font)              scaled to size 10.95pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 105.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 111.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 107.
+(Font)              scaled to size 12.0pt on input line 111.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/sc' will be
-(Font)              scaled to size 12.0pt on input line 107.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 112.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/l/sc' will be
-(Font)              scaled to size 10.95pt on input line 112.
+(Font)              scaled to size 12.0pt on input line 111.
 
-contour: Using real outline for `\textit {ReactJs}' on input line 114.
-contour: Using real outline for `\textit {Flux}' on input line 114.
-contour: Using real outline for `\textit {Ffmpeg}' on input line 116.
-contour: Using real outline for `\textit {Wowza}' on input line 122.
-contour: Using real outline for `\textit {HLS}' on input line 122.
-contour: Using real outline for `\textit {RTMP}' on input line 122.
-contour: Using real outline for `\textit {Wowza}' on input line 123.
-contour: Using real outline for `\textit {Nginx}' on input line 123.
-contour: Using real outline for `\textit {WebRTC}' on input line 124.
-contour: Using real outline for `\textit {Kurento}' on input line 124.
-contour: Using real outline for `\textit {ReactJs}' on input line 125.
-contour: Using real outline for `\textit {Redux}' on input line 125.
-contour: Using real outline for `\textit {Starling}' on input line 132.
-contour: Using real outline for `\textit {character recognition}' on input line
- 145.
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/sc' will be
+(Font)              scaled to size 10.0pt on input line 114.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/l/sc' will be
+(Font)              scaled to size 10.0pt on input line 114.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] (./resume.aux) ) 
 Here is how much of TeX's memory you used:
- 3593 strings out of 493014
- 51610 string characters out of 6133351
- 120817 words of memory out of 5000000
- 7088 multiletter control sequences out of 15000+600000
- 49107 words of font info for 40 fonts, out of 8000000 for 9000
+ 3578 strings out of 493014
+ 51434 string characters out of 6133351
+ 121813 words of memory out of 5000000
+ 7078 multiletter control sequences out of 15000+600000
+ 46801 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,12n,35p,270b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,35p,216b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/roboto/
-rbto_v5svcm.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/roboto/rbto
-_idpkzy.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/google/roboto/Robot
+rbto_idpkzy.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/roboto/rbto
+_v5svcm.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/google/roboto/Robot
 o-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/google/roboto/Roboto
 -Light.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/google/roboto/Roboto
 -LightItalic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on resume.pdf (2 pages, 86138 bytes).
+Output written on resume.pdf (2 pages, 88760 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
