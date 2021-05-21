@@ -1,0 +1,161 @@
+
+
+\documentclass[letterpaper,10pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{boldline}
+\usepackage{bold-extra}
+%\usepackage[default]{lato}
+\usepackage[sfdefault,light]{roboto}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\usepackage[outline]{contour}% http://ctan.org/pkg/contour
+\contourlength{0.1pt}
+\contournumber{10}%
+
+
+%-----------------------------------------------------------
+
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{10in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%----------------------------------------------------COMMANDS--------------------------------------------------------------
+
+\newcommand{\resheading}[1]{\vspace{2pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large\scshape #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-8pt}
+}
+
+\newcommand{\customitem}[2]{\item[$\bullet$] {
+ 	\textbf{#1} \hfill \textit{#2}}
+ }
+
+\newcommand{\workitem}[4]{
+\begin{tabular*}{6.5in}{l @{\extracolsep{\fill}} r}
+		\textbf{\textsc{#1}} & \textit{#2} \\
+		\textsc{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-4pt}}
+
+\newcommand{\educationitem}[4]{
+\begin{tabular*}{6.5in}{l @{\extracolsep{\fill}} r}
+		\textbf{\textsc{#1}} & \textit{#2} \\
+		\textsc{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-4pt}}
+
+\newcommand{\workitemfull}[4]{
+	\item[$\bullet$]\workitem{#1}{#2}{#3}{#4}
+}
+
+\newcommand{\educationitemfull}[4]{
+	\item[$\bullet$]\educationitem{#1}{#2}{#3}{#4}
+}
+
+\newcommand{\header}[4]{
+\begin{tabular*}{7in}{l @{\extracolsep{\fill}}r}
+	\LARGE \textbf {\textsc{#1}} & {\hfill} \\
+		Contact : \textit{#2} & {\hfill} \\
+		
+		Email : \textit{#4} & {\hfill} \\
+		LinkedIn : \textit{#3} & {\hfill} \\ 
+		
+		
+	\hlineB{4}	
+\end{tabular*}		
+}
+
+\newcommand{\keyword}[1]{%
+	\contour{black}{\textit{#1}}%
+}
+
+%-------------------------------------------------COMMANDS END----------------------------------------------------------
+
+\begin{document}
+
+\header{Kshama Mishra}{+1 6692158748}{https://www.linkedin.com/in/kshama-mishra-662b86189}{kshamamishra911@gmail.com}
+\vspace{5pt}
+
+%minipage to force block of text on same page
+\begin{minipage}{\textwidth}
+
+\resheading{Education}
+
+\begin{enumerate}
+	\educationitemfull{Late Shri Baliram Kashyap Memorial Govt. Medical College}{September 2013 - February 2018}{MBBS}{Jagdalpur, India}
+\end{enumerate}
+
+\end{minipage}
+
+%
+%\resheading{Skill Set}
+%\begin{enumerate}
+%\item[-] \textbf{Languages} - Java , Javascript , NodeJs , C++ , ActionScript3 , Python , PHP
+%\item[-] \textbf{Frameworks} - ExpressJs , Django , ReactJs , DropWizard
+%\item[-] \textbf{Advanced Courses Taken} - Computer Vision , Computer Graphics, Machine learning , Data Science 
+%\end{enumerate}
+%
+\resheading{Work Experience}
+\begin{enumerate}
+	\workitemfull{All India Institute of Medical Science}{April 2019 - May 2020}{Junior Resident Doctor}{Raipur, India}
+	\begin{enumerate}
+		\item[-] I was posted in the paediatric surgery department
+		\item[-] Was responsible for attending patients in outpatient as well as inpatient department
+		\item[-] Was responsible for maintaining medical records of patients
+		\item[-] Used to assist senior physicians in minor operations.
+		\item[-] Got opportunities to perform urodynamic studies.
+		\item[-] Attending emergency calls from casualty department
+	\end{enumerate}
+	\workitemfull{Government Medical College}{April 2018 - March 2019}{Intern Doctor}{Jagdalpur , India}
+	\begin{enumerate}
+		\item[-] This was a rotatory internship that included working in all departments of the hospital for a brief period.  
+		\item[-] Was responsible for taking a detailed history of patients as well as doing clinical examination of patients.
+		\item[-] Recommending diagnostic investigations for patients. 
+		\item[-] Performing minor procedures like sebaceous cyst excision, dressing and suturing of wounds, assisting in vaginal delivery etc
+	\end{enumerate}
+	\workitemfull{Voluntary Work}{April 2013 - March 2019}{Volunteer}{Jagdalpur , India}
+	\begin{enumerate}
+		\item[-] During my studies, I also got opportunities to assist senior doctors in rural medical camps.
+		\item[-] Was responsible for taking care of minor tasks like  drug distribution, maintaining medical records of families and educating people about hygiene and nutrition.
+		
+		\item[-] As part of my coursework, I also participated in surveying the local population to find the prevalence of STDs.
+	
+	\end{enumerate}
+
+	
+\end{enumerate}
+
+
+\begin{minipage}{\textwidth}
+
+
+\end{minipage}
+\end{document}
