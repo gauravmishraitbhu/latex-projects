@@ -66,19 +66,18 @@
 		\textsc{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-4pt}}
 
-\newcommand{\educationitem}[5]{
+\newcommand{\educationitem}[4]{
 \begin{tabular*}{6.5in}{l @{\extracolsep{\fill}} r}
 		\textbf{\textsc{#1}} & \textit{#2} \\
 		\textsc{#3} & \textit{#4} \\
-		\textit{#5} & \textit{\hfill} \\
 \end{tabular*}\vspace{-4pt}}
 
 \newcommand{\workitemfull}[4]{
 	\item[$\bullet$]\workitem{#1}{#2}{#3}{#4}
 }
 
-\newcommand{\educationitemfull}[5]{
-	\item[$\bullet$]\educationitem{#1}{#2}{#3}{#4}{#5}
+\newcommand{\educationitemfull}[4]{
+	\item[$\bullet$]\educationitem{#1}{#2}{#3}{#4}
 }
 
 \newcommand{\header}[4]{
@@ -111,9 +110,8 @@
 \resheading{Education}
 
 \begin{enumerate}
-	\educationitemfull{Stony Brook University}{Sept 2016 - Dec 2017}{MS , Computer Science}{Stony Brook,USA}{GPA = 3.8/4}
-	
-	\educationitemfull{Indian Institute Of Technology,Varanasi}{May 2006 - Apr 2010}{Btech , Computer Science}{Varanasi,India}{CGPA = 7.2/10}
+	\educationitemfull{Stony Brook University}{Sept 2016 - Dec 2017}{MS , Computer Science}{Stony Brook,USA}
+	\educationitemfull{Indian Institute Of Technology,Varanasi}{May 2006 - Apr 2010}{Btech , Computer Science}{Varanasi,India}
 \end{enumerate}
 
 \end{minipage}
@@ -128,11 +126,16 @@
 %
 \resheading{Work Experience}
 \begin{enumerate}
-	\workitemfull{ThousandEyes}{Feb 2018 - Present}{Software Engineer}{San Francisco, USA}
+\workitemfull{Pala Alto Networks}{May 2021 - Present}{Principle Software Engineer}{San Francisco, USA}
 	\begin{enumerate}
-		\item[-] Designing, implementing and maintaining components of our data processing pipeline. These components include micro services for receiving data points from agents, processing them and finally storing them in a distributed data store.
-		\item[-] Implementing new user flows in our web application which exposes our agent’s new capabilities to customers.
-		\item[-] Work on data visualization component of our web interface. 
+		\item[-] Building data processing pipelines using Apache Beam and Google's Dataflow.	
+	\end{enumerate}
+
+	\workitemfull{ThousandEyes}{Feb 2018 - April 2021}{Senior Software Engineer}{San Francisco, USA}
+	\begin{enumerate}
+		\item[-] Designing, implementing and maintaining components of our data processing pipeline.These components include micro services for receiving data points from agents, processing them and finally storing them in a distributed data store. This pipeline currently process about 20k data points per second.
+		\item[-] Implementing new user flows in our web application which exposes our agents new capabilities to customers.
+		\item[-] Work on data visualisation component of our web interface. 
 		\item[-] Expose new apis to customers which allow users to interact with our platform from outside web interface.
 		\item[-] \textbf{Tech Stack} - Java, Javascript, Spring boot, Mysql, Kafka, ElasticSearch, Angular1, Docker, Kubernetes
 	\end{enumerate}
@@ -145,10 +148,9 @@
 	%typito
 	\workitemfull{Typito}{Apr 2015 - July 2016}{Co-Founder/Engineer}{Bangalore,India}
 	\begin{enumerate}
-		\item[-] Designed and built typito's backend which included the webapps and a couple of downstream video rendering micro services.
+		\item[-] Designed and built typito's backend which included the webapps and two downstream video rendering micro services.
 		\item[-] Built video rendering engine using Ffmpeg's library. This module was responsible for overlaying graphics animations on top of a video.
-		\item[-] Built a micro service for transforming graphics animation created on typito's UI to
-		series of png images.
+		\item[-] Built a micro service for transforming graphics animation created on typito's UI to series of png images.
 		\item[-] \textbf{Tech Stack} - Javascript/Nodejs, Express,C++, ReactJs, Ffmpeg, Amazon SQS, Amazon Elastic Transcoder, Phantomjs
 	\end{enumerate}
 
